@@ -1,6 +1,112 @@
-body{
-  font-family: Arial, Helvetica, sans-serif;  
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f7f7f7;
 }
 
+p {
+  font-size: 20px;
+}
+#logo {
+  text-align: center;
+  font-size: 50px;
+}
 
+.buttons a {
+  text-decoration: none;
+  background: white;
+  padding: 15px;
+  border-radius: 4px;
+  color: #111;
+  font-size: 15px;
+  flex-basis: 100px;
+  text-align: center;
+}
+.buttons a:hover {
+  background-color: #e21;
+  color: white;
+  transition: all 0.3s linear;
+}
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+#barrinha {
+  background: #e21;
+  width: 50px;
+  height: 5px;
+  grid-column: 2;
+  position: relative;
+  top: 20px;
+  right: 25px;
+}
+.container img {
+  width: 500px;
+}
+.sobre {
+  padding: 40px;
+  text-align: end;
+  background: white;
+}
+
+.sobre a {
+  text-decoration: none;
+  background: #e21;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.sobre a:hover {
+  background-color: #c6c6c6;
+  color: #111;
+  transition: all 0.3s linear;
+}
+
+.sobre p {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+#bik {
+  margin: 0;
+  font-size: 64px;
+  color: #c6c6c6;
+  text-align: end;
+  justify-self: center;
+  align-self: center;
+}
+
+.vantagem-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+  padding: 20px;
+}
+.vantagem-item span {
+  font-weight: bold;
+}
+
+.vantagens {
+  padding: 40px;
+  background: white;
+}
+
+footer {
+  background-color: #fff;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
