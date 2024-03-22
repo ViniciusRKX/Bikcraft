@@ -93,12 +93,24 @@ p {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
-  padding: 20px;
+  padding: 10px;
 }
 .vantagem-item span {
   font-weight: bold;
 }
 
+.vantagem-item span {
+  font-weight: bold;
+}
+
+.vantagem-item img {
+  width: 20px;
+}
+
+.vantagem-item p {
+  margin: 0;
+  
+}
 .vantagens {
   padding: 40px;
   background: white;
