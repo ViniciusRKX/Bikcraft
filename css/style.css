@@ -94,9 +94,7 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 10px;
-}
-.vantagem-item span {
-  font-weight: bold;
+  position: relative;
 }
 
 .vantagem-item span {
@@ -111,9 +109,25 @@ p {
   margin: 0;
   
 }
+
 .vantagens {
   padding: 40px;
   background: white;
+}
+
+.vantagem-item::after {
+
+  content: " ";
+  height: 0%;
+  width: 4px;
+  background: #e21;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  
+}
+
+.vantagem-item:hover::after {
+  height: 90%;
 }
 
 footer {
